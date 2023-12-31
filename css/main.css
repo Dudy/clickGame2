@@ -1,0 +1,19 @@
+body ul {
+    margin: 1rem;
+}
+
+.tab-content {
+    margin: 1rem;
+    border: solid 1px black;
+}
+
+#myTabContent .tab-pane div div.nav {
+    button.nav-link {
+        width: 200px;
+    }
+}
+
+#myTabContent .tab-pane div div.tab-content {
+    border: solid 1px green;
+}
+

@@ -1,0 +1,209 @@
+<!-- index.html with the bootstrap libs (css and js) and main.css and main.js included -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 4 Starter Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="meat-overview-tab" data-bs-toggle="tab" data-bs-target="#meat-overview-tab-pane" type="button"
+                role="tab" aria-controls="meat-overview-tab-pane" aria-selected="true"><span data-property="meat">0</span> meat
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="larvae-overview-tab" data-bs-toggle="tab" data-bs-target="#larvae-overview-tab-pane" type="button"
+                role="tab" aria-controls="larvae-overview-tab-pane" aria-selected="false"><span data-property="larvae">0</span> larvae
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+                role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled
+        </button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <!-- meat -->
+    <div class="tab-pane fade show active" id="meat-overview-tab-pane" role="tabpanel" aria-labelledby="meat-overview-tab" tabindex="0">
+        <div class="d-flex align-items-start" style="border: solid 1px black;">
+            <div class="nav flex-column nav-pills me-4" id="meat-overview-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link d-none justify-content-between" id="meat-overview-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#meat-overview-pills-home" type="button" role="tab" aria-controls="meat-overview-pills-home"
+                        aria-selected="false">Home
+                </button>
+                <button class="nav-link d-none justify-content-between" id="meat-overview-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#meat-overview-pills-profile" type="button" role="tab" aria-controls="meat-overview-pills-profile"
+                        aria-selected="false">Profile
+                </button>
+                <button class="nav-link d-none justify-content-between" id="meat-overview-pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#meat-overview-pills-disabled" type="button" role="tab" aria-controls="meat-overview-pills-disabled"
+                        aria-selected="false" disabled>Disabled
+                </button>
+                <button class="nav-link d-flex justify-content-between" id="meat-overview-pills-drone-tab" data-bs-toggle="pill"
+                        data-bs-target="#meat-overview-pills-drone" type="button" role="tab" aria-controls="meat-overview-pills-drone"
+                        aria-selected="false">
+                    <span class="left">Drone</span>
+                    <span class="right" data-property="drone">0</span>
+                </button>
+                <button class="nav-link d-flex justify-content-between active" id="meat-overview-pills-meat-tab"
+                        data-bs-toggle="pill" data-bs-target="#meat-overview-pills-meat" type="button" role="tab"
+                        aria-controls="meat-overview-pills-meat" aria-selected="true">
+                    <span class="left">Meat</span>
+                    <span class="right" data-property="meat">0</span>
+                </button>
+            </div>
+            <div class="tab-content" id="meat-overview-pills-tabContent">
+                <div class="tab-pane fade" id="meat-overview-pills-home" role="tabpanel" aria-labelledby="meat-overview-pills-home-tab" tabindex="0">AAA</div>
+                <div class="tab-pane fade" id="meat-overview-pills-profile" role="tabpanel" aria-labelledby="meat-overview-pills-profile-tab" tabindex="0">BBB</div>
+                <div class="tab-pane fade" id="meat-overview-pills-disabled" role="tabpanel" aria-labelledby="meat-overview-pills-disabled-tab" tabindex="0">CCC</div>
+
+                <div class="tab-pane fade" id="meat-overview-pills-drone" role="tabpanel" aria-labelledby="meat-overview-pills-drone-tab" tabindex="0">
+                    <h1>Drone</h1>
+                    <p>Drones are the lowest class of worker in your swarm. They continuously gather meat to feed your swarm.</p>
+                    <p>You own <span data-property="drone">0</span> drone.</p>
+                    <p>Each produces <span data-property="droneMeatGain">0</span> meat per second. (×<span data-property="droneBonus">0</span> bonus)</p>
+                    <p>In total, they produce <span data-property="meatGain">0</span> meat per second.</p>
+                    <!-- horizontal rule -->
+                    <hr>
+                    <p>Hatching 1 drone will cost <span data-property="droneCost.meat">0</span> meat and <span data-property="droneCost.larvae">0</span> larvae.</p>
+                    <button class="btn btn-primary" data-action="droneBuyAction" tabindex="0">Buy</button>
+                </div>
+
+                <div class="tab-pane fade show active" id="meat-overview-pills-meat" role="tabpanel" aria-labelledby="meat-overview-pills-meat-tab" tabindex="0">
+                    <h1>Meat</h1>
+                    <p>All of your swarm's creatures eat meat.</p>
+                    <p>You own <span data-property="meat">0</span> meat.</p>
+                    <p>You earn <span data-property="meatGain">0</span> meat per second.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- larvae -->
+    <div class="tab-pane fade" id="larvae-overview-tab-pane" role="tabpanel" aria-labelledby="larvae-overview-tab" tabindex="0">
+        <div class="d-flex align-items-start" style="border: solid 1px black;">
+            <div class="nav flex-column nav-pills me-4" id="larvae-overview-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link d-flex justify-content-between active" id="larvae-overview-pills-larvae-tab"
+                        data-bs-toggle="pill" data-bs-target="#larvae-overview-pills-larvae" type="button" role="tab"
+                        aria-controls="larvae-overview-pills-larvae" aria-selected="true">
+                    <span class="left">Larvae</span>
+                    <span class="right" data-property="larvae">0</span>
+                </button>
+                <button class="nav-link d-none justify-content-between" id="larvae-overview-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#larvae-overview-pills-profile" type="button" role="tab" aria-controls="larvae-overview-pills-profile"
+                        aria-selected="false">Profile
+                </button>
+                <button class="nav-link d-none justify-content-between" id="larvae-overview-pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#larvae-overview-pills-disabled" type="button" role="tab" aria-controls="larvae-overview-pills-disabled"
+                        aria-selected="false" disabled>Disabled
+                </button>
+                <button class="nav-link d-none justify-content-between" id="larvae-overview-pills-drone-tab" data-bs-toggle="pill"
+                        data-bs-target="#larvae-overview-pills-drone" type="button" role="tab" aria-controls="larvae-overview-pills-drone"
+                        aria-selected="false">
+                    <span class="left">Drone</span>
+                    <span class="right" data-property="drone">0</span>
+                </button>
+                <button class="nav-link d-none justify-content-between" id="larvae-overview-pills-meat-tab"
+                        data-bs-toggle="pill" data-bs-target="#larvae-overview-pills-meat" type="button" role="tab"
+                        aria-controls="larvae-overview-pills-meat" aria-selected="false">
+                    <span class="left">Meat</span>
+                    <span class="right" data-property="meat">0</span>
+                </button>
+            </div>
+            <div class="tab-content" id="larvae-overview-pills-tabContent">
+                <div class="tab-pane fade show active" id="larvae-overview-pills-home" role="tabpanel" aria-labelledby="larvae-overview-pills-home-tab" tabindex="0">
+                    <h1>Larva</h1>
+                    <p>The children of your swarm. These young creatures morph into other adult units.</p>
+                    <p>You own <span data-property="larvae">0</span> larvae.</p>
+                    <p>You earn <span data-property="larvaeGain">0</span> larvae per second. (×1.00 bonus)</p>
+                    <hr>
+                    <h2>Upgrades</h2>
+                    <p>Hatchery (<span data-property="hatchery">0</span>)</p>
+                    <p>Each hatchery produces more larvae per second. Currently, your hatcheries produce a total of 1 larvae per second. With no multipliers, they would produce 1 larvae per second.</p>
+                    <p>Next upgrade costs <span data-property="hatcheryCost">0</span> meat.</p>
+                    <button class="btn btn-primary" data-action="hatcheryBuyAction" tabindex="0">Buy</button>
+                </div>
+                <div class="tab-pane fade" id="larvae-overview-pills-profile" role="tabpanel" aria-labelledby="larvae-overview-pills-profile-tab" tabindex="0">BBB</div>
+                <div class="tab-pane fade" id="larvae-overview-pills-disabled" role="tabpanel" aria-labelledby="larvae-overview-pills-disabled-tab" tabindex="0">CCC</div>
+
+                <div class="tab-pane fade" id="larvae-overview-pills-drone" role="tabpanel" aria-labelledby="larvae-overview-pills-drone-tab" tabindex="0">
+                    <h1>Drone</h1>
+                    <p>Drones are the lowest class of worker in your swarm. They continuously gather meat to feed your swarm.</p>
+                    <p>You own <span data-property="drone">0</span> drone.</p>
+                    <p>Each produces <span data-property="droneMeatGain">0</span> meat per second. (×<span data-property="droneBonus">0</span> bonus)</p>
+                    <p>In total, they produce <span data-property="meatGain">0</span> meat per second.</p>
+                    <!-- horizontal rule -->
+                    <hr>
+                    <p>Hatching 1 drone will cost <span data-property="droneCost.meat">0</span> meat and <span data-property="droneCost.larvae">0</span> larvae.</p>
+                    <button class="btn btn-primary" data-action="droneBuyAction" tabindex="0">Buy</button>
+                </div>
+
+                <div class="tab-pane fade" id="larvae-overview-pills-meat" role="tabpanel" aria-labelledby="larvae-overview-pills-meat-tab" tabindex="0">
+                    <h1>Meat</h1>
+                    <p>All of your swarm's creatures eat meat.</p>
+                    <p>You own <span data-property="meat">0</span> meat.</p>
+                    <p>You earn <span data-property="meatGain">0</span> meat per second.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        three
+    </div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+        four
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
