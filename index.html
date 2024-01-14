@@ -1,9 +1,8 @@
-<!-- index.html with the bootstrap libs (css and js) and main.css and main.js included -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap 4 Starter Template</title>
+    <title>Dudy click game 2</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -116,6 +115,15 @@
                     <hr>
                     <p>Hatching 1 drone will cost <span data-property="droneCost.meat">0</span> meat and <span data-property="droneCost.larvae">0</span> larvae.</p>
                     <button class="btn btn-primary" data-action="droneBuyAction" tabindex="0">Buy</button>
+                    <div class="">
+                        <hr>
+                        <h1>Upgrades</h1>
+                        <p>Faster Drones (<span data-property="droneUpgrade">0</span>)</p>
+                        <p>Drones gather more meat.</p>
+                        <p>Next upgrade costs <span data-property="droneUpgradeCost">0</span> drones.</p>
+                        <button class="btn btn-primary" data-action="droneBuyUpgradeAction" tabindex="0">Buy</button>
+                    </div>
+                    <hr>
                 </div>
 
                 <div class="tab-pane fade show active" id="meat-overview-pills-meat" role="tabpanel" aria-labelledby="meat-overview-pills-meat-tab" tabindex="0">

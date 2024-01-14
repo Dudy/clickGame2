@@ -6,6 +6,8 @@ const internal_data = {
     drone: 0,
     droneMeatGain: 1.0,
     droneBonus: 1.0,
+    droneUpgrade: 0,
+    droneUpgradeCost: 66,
     droneCost: {
         meat: 10,
         larvae: 1
@@ -16,6 +18,15 @@ const internal_data = {
             data.larvae -= data.droneCost.larvae;
             data.drone += 1;
             data.meatGain = data.drone * data.droneMeatGain * data.droneBonus;
+        }
+    },
+    droneBuyUpgradeAction: () => {
+        if (data.drone >= data.droneUpgradeCost) {
+            data.drone -= data.droneUpgradeCost;
+            data.droneUpgrade += 1;
+            data.droneBonus *= 2;
+            data.meatGain = data.drone * data.droneMeatGain * data.droneBonus;
+            data.droneUpgradeCost *= 666;
         }
     },
 
